@@ -1,0 +1,116 @@
+:root{
+    --paragraph-color:#444444;
+    --icon-color:#ffc451;
+    --head2-color:#aaaaaa;
+    --parahead-color:#151515;
+}
+.portfolio_container_fluid{
+    width: 100%;
+    margin: 40px 0;
+}
+.portfolio_container{
+    width: 90%;
+    margin: auto;
+}
+.portfolio_container h2{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    color: var(--head2-color);
+    position: relative;
+}
+.portfolio_container h2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 108px;
+    border-bottom: 1px solid #ffc451;
+    height: 0px;
+    width: 102px;
+}
+.portfolio_container p{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--parahead-color);
+    padding-top: 10px;
+}
+.portfolio_container2{
+    width: 100%;
+    margin: 30px 0;
+}
+.portfolio_container2_img{
+    width: 100%;
+    padding: 20px;
+}
+.portfolio_container2_content{
+    width: 100%;
+    padding: 20px;
+}
+.portfolio_container2_img img{ 
+    width: 100%;
+    height: 500px;
+}
+.portfolio_container2_content span{
+   color: var(--paragraph-color);
+   padding: 15px 0 10px 0px;
+   line-height: 24px;
+   display: block;
+   font-size: 18px;
+}
+.portfolio_item_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio_item{
+  width: 100%;
+    margin: 10px;
+}
+.portfolio_item_right h5{
+    font-size: 35px;
+    
+}
+.testimonals_container_fluid{
+    width: 100%;
+    height: 400px;
+    padding: 80px 0;
+    background: url(../../Assets/images/testimonials-bg.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.testimonals_container_fluid::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (min-width:768px) {
+    .portfolio_item{
+        display: flex;
+        width: 45%;
+        margin: 10px;
+    }
+}
+@media only screen and (min-width:1440px) {
+    .portfolio_container2_img{
+        width: 50%;
+        padding: 20px;
+    }
+    .portfolio_container2_content{
+        width: 50%;
+        padding: 20px;
+    }
+    .portfolio_container2{
+        width: 100%;
+        margin: 30px 0;
+        display: flex;
+    }
+}

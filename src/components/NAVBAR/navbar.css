@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --paragraph-color:#444444;
+    --icon-color:#ffc451;
+    --head2-color:#aaaaaa;
+    --parahead-color:#151515;
+    --white-color:#fff;
+}
+.nav_container_main{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar_container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_container h3{
+  width: 20%;
+  color: var(--white-color);
+  font-size: 30px;
+  text-align: center;
+}
+.navbar_container ul{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home,.about,.service,.portfolio,.team,.dropDown,.contact{
+    text-decoration: none;
+    padding: 0 15px;
+    color: var(--white-color);
+}
+.navbar_container ul li:hover{
+    color: var(--icon-color);
+    transition: 1s;
+}
+.getstart{
+    text-decoration: none;
+    padding: 0 20px;
+    color: var(--white-color);
+    border: 2px solid #ffc451;
+    padding: 10px 25px;
+    border-radius: 6px;
+    margin: 0 0 0 60px;
+}
+.getstart:hover{
+    background: var(--icon-color);
+    transition: 1s;
+    color: #444444;
+}
+.getstart li:hover{
+    color: #444444!important;
+}
